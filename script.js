@@ -8,7 +8,7 @@ let investment = capital * average + capital;
 const arrResults = [capital];
 
 for (let i = investment; i <= 1000000; i = i + i * 0.1) {
-  arrResults.push(i);
+  arrResults.push(Math.trunc(i));
 }
 
 console.log(arrResults.length);
